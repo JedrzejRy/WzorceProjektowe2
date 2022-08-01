@@ -6,6 +6,9 @@ public class Main {
         if (citizen.getAge()>50){
             citizen.setPrice(new Discount());
             System.out.println(citizen.getMedicinePrice(100));
+        }else {
+            citizen.setPrice(new NoDiscount());
+            System.out.println(citizen.getMedicinePrice(100));
         }
 
     }
